@@ -20,5 +20,144 @@ body{
 
 .nav__section{
     background-color: #f4f8f9;
-    padding: 1rem 2rem;
+    padding: 1rem 1.75rem;
 }
+
+
+.Breadcrumb{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    padding-bottom: 1.5rem;
+    color: #57585a;
+}
+.Breadcrumb li{
+    display: flex;
+    color: black;
+    align-items: center;
+}   
+.Breadcrumb a{
+    color: #57585a;
+}
+
+.name__course{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    /* background shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    clip-path: inset(0px -10px -10px -10px); /* إخفاء الظل من الأعلى فقط */
+
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1),  */
+            /* 0px 0px -1px rgba(0, 0, 0, 0); */
+
+    padding: 1rem 0rem;
+}
+.name__course span{
+    font-size: 1.9rem;
+}
+
+.container{
+    padding: 0 1.75rem;
+}
+
+
+.course-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+
+
+/* ----------------------------------------------/ */
+/* .comments-section {
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-content h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.comment-date {
+    font-size: 14px;
+    color: gray;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comment p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.progress-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.progress-bar {
+    height: 4px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 2px;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 63%;
+    background-color: #4CAF50;
+    border-radius: 2px;
+}
+
+.indicator {
+    position: absolute;
+    top: -18px;
+    left: 63%;
+    transform: translateX(-50%);
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #666;
+}
+
+.percentage {
+    text-align: center;
+    margin-top: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+} */

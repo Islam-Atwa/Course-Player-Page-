@@ -6,7 +6,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+
+/* create variable css */
+
+--root{
+    --gapSection:2rem;
+}
+
+
 
 ul{
     list-style: none;
@@ -15,7 +24,9 @@ a{
     text-decoration: none;
 }
 body{
-    background-color: #fefefe;
+    background-color: #f6f4f4;
+    /* font-family: "Poppins", serif; */
+
 }
 
 .nav__section{
@@ -58,38 +69,107 @@ body{
 
 .container{
     padding: 0 1.75rem;
+    padding-top: 1.5rem;
 }
-
 
 .course-container{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
 }
 
-.container source{
-    width: 20px;
-    height: 20px;
+.video-player{
+    border-radius: .5rem;
+    width:calc(100% - 4rem);
+}
+.video-player source{
+    position: relative;
+}
+.play-button{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    background-color: white;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    font-size:larger;
+    width: 50px;
+    height: 50px;
 }
 
+.navigation-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.navigation-section a{
+    padding: 0 8px;
+}
 
-/* ----------------------------------------------/ */
-/* .comments-section {
+.nav-item i{
+    padding: 10px 10px;
+    border: 1px solid #c1c1c1;
+    border-radius: 50%;
+    color: #333;
+}
+
+/* --------------------metrial SECTION--------------------------- */
+.mateials-section{
+    padding-bottom: 2rem;
+}
+h2{
+    padding-bottom: 1rem;
+    font-family: "Poppins", serif;
+
+}
+.materials{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, .1);
+} 
+.item-data{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+}
+.item-data:not(:last-child){
+    border-bottom: .5px solid #c1c1c1;
+
+
+}
+.item-data:not(:first-child){
+    padding-top: 15px;
+}
+.item-data .data{
+    padding-left:12rem;
+}
+/* ----------------- Comment -----------------------------*/
+
+.comments-section {
     margin: 20px auto;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", serif;
 }
 
-.comment {
+.comment{
     display: flex;
     align-items: flex-start;
-    border-bottom: 1px solid #ddd;
     padding: 15px 0;
+}
+.noneborder{
+    border-bottom: none;
 }
 
 .comment img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 35px;
 }
 
 .comment-content {
@@ -99,9 +179,11 @@ body{
 .comment-content h3 {
     margin: 0;
     font-size: 16px;
+    color: #6c6c6c;
+    padding-bottom: 8px;
 }
 
-.comment-date {
+.comment-date{
     font-size: 14px;
     color: gray;
     display: block;
@@ -109,10 +191,39 @@ body{
 }
 
 .comment p {
-    margin: 0;
     font-size: 14px;
-    color: #666;
+    padding-top: 10px;
+    color: #a2a2a2;
 }
+/* ------------------------------------------------WRITE COMMENT------------------ */
+
+
+.comment-box{
+    padding-top: 3rem;
+}
+
+.comment-box textarea{
+    display: block;
+    height: 150px;
+    width: 100%;
+    border: none; outline: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    resize:horizontal;
+    margin-bottom: 20px;
+}
+.submit-btn{
+    padding: 1rem 2rem ;
+    background-color: #40b59b;
+    border: none;
+    color: white;
+    font-size: .75rem;
+    font-family: "Poppins", serif;
+    letter-spacing:1px;
+}
+/* ------------------------------- LEFT SECTION  -----------------------*/
+
+
 
 .progress-container {
     width: 100%;
@@ -155,12 +266,20 @@ body{
     font-family: Arial, sans-serif;
     font-size: 12px;
     color: #666;
+    position: relative;
+    top: -15px;
 }
 
 .percentage {
+    position: absolute;
+    top:5px;
+    left: 60%;
     text-align: center;
     margin-top: 8px;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    color: #666;
-} */
+    color: blue;
+}
+
+/* ----------------------------------- progress bar --------------------------- */
+
